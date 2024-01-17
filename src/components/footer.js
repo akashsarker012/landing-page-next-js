@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <div>
-            <footer className="bg-[#111] px-4 sm:px-10 py-12 mt-32">
+        <div className=' bg-[#111]'>
+            <footer className=" pt-12 mt-32 max-w-7xl mx-auto">
                 <div className="lg:max-w-[50%] mx-auto text-center">
                     <h2 className="md:text-4xl text-3xl font-bold md:!leading-[50px] mb-6">Newsletter</h2>
                     <p className="text-gray-400">Subscribe to our newsletter and stay up to date with the latest news,
@@ -59,7 +59,13 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
+                <div class="mt-12 py-6 bg-[#333] w-full">
+                    <p className='text-white text-center'>© 2023<a href='https://readymadeui.com/'
+                        className="hover:underline mx-1">ReadymadeUI</a>All Rights Reserved.</p>
+                </div>
             </footer>
+
+
         </div>
     )
 }
