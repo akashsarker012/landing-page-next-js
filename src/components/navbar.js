@@ -4,15 +4,15 @@ import Logo from '../../public/logo.png'
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <>
-    <header className='py-4 px-4 sm:px-10 z-50 absolute w-full '>
+    <header className='py-4 px-4 sm:px-10 z-50 absolute w-full top-0 left-0'>
       <div className='lg:flex lg:items-center gap-x-2 relative'>
         <div className="flex items-center shrink-0">
-          <a href="javascript:void(0)"><img src="https://readymadeui.com/readymadeui-light.svg" alt="logo"
+          <Link href="/"><img src="https://readymadeui.com/readymadeui-light.svg" alt="logo"
               className='w-40' />
-          </a>
+          </Link>
           <button id="toggle" className='lg:hidden ml-auto'>
             <svg className="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
@@ -21,14 +21,14 @@ const navbar = () => {
             </svg>
           </button>
         </div>
-        <div id="collapseMenu"
+        <div
           className="lg:!flex lg:items-center w-full lg:ml-14 max-lg:hidden max-lg:bg-black gap-6 max-lg:fixed max-lg:w-1/2 max-lg:min-w-[250px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto">
           <ul className='lg:flex lg:space-x-6 max-lg:space-y-6 max-lg:w-full text-white'>
             <li className='max-lg:border-b max-lg:py-2 px-3'>
               <a href='javascript:void(0)' className='lg:hover:text-blue-600 text-blue-600 block transition-all'>Home</a>
             </li>
-            <li className='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
-                className='lg:hover:text-blue-600 block transition-all'>Team</a>
+            <li className='max-lg:border-b max-lg:py-2 px-3'><Link href='/team'
+                className='lg:hover:text-blue-600 block transition-all'>Team</Link>
             </li>
             <li className='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
                 className='lg:hover:text-blue-600 block transition-all'>Feature</a>
@@ -53,38 +53,8 @@ const navbar = () => {
         </div>
       </div>
     </header>
-
-    {/* <div className="max-w-5xl mx-auto text-center relative px-4 sm:px-10 mt-16">
-      <h1 className="lg:text-7xl md:text-6xl text-4xl font-bold mb-6 md:!leading-[80px] text-white">Build Landing Pages with Typeform
-        Integration</h1>
-      <p className="text-base text-gray-400">Embark on a gastronomic journey with our curated dishes, delivered promptly
-        to your doorstep. Elevate your dining experience today. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit.</p>
-      <div className="grid sm:grid-cols-3 gap-6 items-center mt-16 text-yellow-50">
-        <div className="flex flex-col items-center text-center">
-          <h5 className="font-bold text-2xl text-blue-600 mb-2">10+</h5>
-          <p>Years Experience</p>
-        </div>
-        <div className="flex flex-col items-center text-center">
-          <h5 className="font-bold text-2xl text-blue-600 mb-2">890</h5>
-          <p>Cases Solved</p>
-        </div>
-        <div className="flex flex-col items-center text-center">
-          <h5 className="font-bold text-2xl text-blue-600 mb-2">250</h5>
-          <p>Business Partners</p>
-        </div>
-      </div>
-      <div className="mt-14 flex gap-x-8 gap-y-4 justify-center max-sm:flex-col">
-        <button type='button'
-          className="px-6 py-3.5 rounded-md text-white bg-blue-700 hover:bg-blue-800 transition-all">Start a free
-          trial</button>
-        <button type='button'
-          className="bg-transparent hover:bg-blue-600 border border-blue-600 px-6 py-3.5 rounded-md text-white transition-all">API
-          documentation</button>
-      </div>
-    </div> */}
   </>
   )
 }
 
-export default navbar;
+export default Navbar;
