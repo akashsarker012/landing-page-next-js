@@ -1,10 +1,10 @@
-import Banner from "@/components/banner";
+
 import Navbar from "@/components/navbar";
 import Blogs from "@/components/blogs";
-import Footer from "@/components/footer";
 import Client from "@/components/client";
 import Pricing from "@/components/pricing";
-import Metrics from "@/components/Metrics";
+import Metrics from "@/components/metrics";
+import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
@@ -17,8 +17,6 @@ export default function Home() {
       <Pricing></Pricing>
       <Blogs></Blogs>
       <Metrics></Metrics>
-      <Footer></Footer>
-
       </div>
       
   );

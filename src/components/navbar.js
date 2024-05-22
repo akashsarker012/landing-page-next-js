@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Logo from '../../public/logo.png'
 import Link from 'next/link'
-import { Button } from "@/components/ui/button"
 
 const Navbar = () => {
   return (
@@ -15,7 +13,7 @@ const Navbar = () => {
           </Link>
           <button id="toggle" className='lg:hidden ml-auto'>
             <svg className="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
+              <path fillRule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                 ></path>
             </svg>
@@ -25,18 +23,18 @@ const Navbar = () => {
           className="lg:!flex lg:items-center w-full lg:ml-14 max-lg:hidden max-lg:bg-black gap-6 max-lg:fixed max-lg:w-1/2 max-lg:min-w-[250px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto">
           <ul className='lg:flex lg:space-x-6 max-lg:space-y-6 max-lg:w-full text-white'>
             <li className='max-lg:border-b max-lg:py-2 px-3'>
-              <a href='javascript:void(0)' className='lg:hover:text-blue-600 text-blue-600 block transition-all'>Home</a>
+              <a href='#' className='lg:hover:text-blue-600 text-blue-600 block transition-all'>Home</a>
             </li>
             <li className='max-lg:border-b max-lg:py-2 px-3'><Link href='/team'
                 className='lg:hover:text-blue-600 block transition-all'>Team</Link>
             </li>
-            <li className='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
+            <li className='max-lg:border-b max-lg:py-2 px-3'><a href='#'
                 className='lg:hover:text-blue-600 block transition-all'>Feature</a>
             </li>
-            <li className='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
+            <li className='max-lg:border-b max-lg:py-2 px-3'><a href='#'
                 className='lg:hover:text-blue-600 block transition-all'>Blog</a>
             </li>
-            <li className='max-lg:border-b max-lg:py-2 px-3'><a href='javascript:void(0)'
+            <li className='max-lg:border-b max-lg:py-2 px-3'><a href='/about'
                 className='lg:hover:text-blue-600 block transition-all'>About</a>
             </li>
           </ul>
